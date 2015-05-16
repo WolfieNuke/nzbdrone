@@ -25,8 +25,8 @@ ADD nzbdrone.sh /etc/service/nzbdrone/run
 RUN chmod +x /etc/service/*/run /etc/my_init.d/*
 
 # Fix a Debianism of sonarr's uid being 101
-RUN usermod -u 108 nzbdrone
-RUN usermod -g 100 nzbdrone
+#RUN usermod -u 108 nzbdrone
+#RUN usermod -g 100 nzbdrone
 
 #########################################
 ##         EXPORTS AND VOLUMES         ##
