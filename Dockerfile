@@ -19,6 +19,10 @@ CMD ["/sbin/my_init"]
 ##  FILES, SERVICES AND CONFIGURATION  ##
 #########################################
 
+# Fix a Debianism of sonarr's uid being 101
+RUN usermod -u 108 nzbdrone
+RUN usermod -g 100 nzbdrone
+
 # Add services to runit
 ADD nzbdrone.sh /etc/service/nzbdrone/run
 
