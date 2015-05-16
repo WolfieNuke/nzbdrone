@@ -33,7 +33,7 @@ apt-get install -qy libgdiplus libmono-cil-dev nzbdrone
 #########################################
 
 # Fix permissions
-chown -R nobody:users /opt/NzbDrone
+chown -R nzbdrone:users /opt/NzbDrone
 
 #########################################
 ##                 CLEANUP             ##
